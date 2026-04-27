@@ -4,7 +4,7 @@ import React from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <nav className="transition-all duration-300 w-full bg-red-900/50 backdrop-blur-sm px-4">
+    <nav className="transition-all duration-300 w-full bg-slate-900/50 backdrop-blur-sm px-4">
       <main className="h-14 sm:h-20 max-w-7xl flex items-center justify-between px-4 sm:px-10 lg:px-12 mx-auto">
         <section className="flex justify-between items-center">
           {/*Logo*/}
@@ -25,11 +25,11 @@ const Navbar = () => {
           <a href="#features" className="text-gray-300 hover:text-white">
             Features
           </a>
+          <a href="#pricing" className="text-gray-300 hover:text-white">
+            Pricing
+          </a>
           <a href="#testimonials" className="text-gray-300 hover:text-white">
             Testimonials
-          </a>
-          <a href="#AboutUs" className="text-gray-300 hover:text-white">
-            AboutUs
           </a>
         </section>
         {/*button*/}
