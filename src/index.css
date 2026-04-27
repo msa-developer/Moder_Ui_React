@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+  .duration-300 {
+    animation-duration: 300ms;
+  }
+  .slide-from-top {
+    animation-name: slideFromTop;
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
