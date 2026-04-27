@@ -2,6 +2,7 @@ import React from "react";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
+
   React.useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -9,6 +10,7 @@ const Hero = () => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+
   return (
     <section className="min-h-screen overflow-hidden relative flex items-center justify-center">
       <div
