@@ -4,7 +4,7 @@ import React from "react";
 const Nav = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <nav className="bg-red-900/20 p-4 w-full">
+    <nav className="bg-red-900/20 p-4 w-full transition-all duration-300 backdrop-blur-sm z-50 fixed top-0">
       <div className="h-14 px-4 sm:px-8 mx-auto max-w-7xl ">
         <header className="flex items-center w-full justify-between">
           {/* Logo */}
@@ -42,7 +42,7 @@ const Nav = () => {
 
       {/* LInks */}
       {open ? (
-        <section className="sm:hidden space-x-2">
+        <section className="sm:hidden space-x-2 duration-300 animate-in slide-from-top">
           <a href="#features" className="text-gray-300 hover:text-white block">
             Features
           </a>
